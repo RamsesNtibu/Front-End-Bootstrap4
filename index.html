@@ -50,14 +50,16 @@
               culinary senses!
             </p>
           </div>
-          <div class="row align-items-center text-center">
-            <div class="col-12 col-sm">
-              <img src="img/logo.png" class="img-fluid" alt="" />
+          <div class="col">
+            <div class="row align-items-center text-center">
+              <div class="col-12 col-sm">
+                <img src="img/logo.png" class="img-fluid" alt="" />
+              </div>
+              <div class="col-12 col-sm">
+                <button type="submit" class="btn btn-warning btn-block"><a href="#reserveform">Reserve Table</a></button>
+              </div>
             </div>
-            <div class="col-12 col-sm">
-              <button type="submit" class="btn btn-warning">Reserve Table</button>
-            </div>
-          </div>        
+          </div>
         </div>
       </div>
     </header>
@@ -89,17 +91,16 @@
           <h3>This Month's Promotions</h3>
         </div>
         <div class="col col-sm order-sm-last col-md">
-          <div class="media"> 
-            <img class="d-flex mr-3 ml-sm-3 img-thumbnail align-self-center order-sm-last" src="img/buffet.png" alt="uthapizza" />         
-            <div class="media-body">
-              <h2>Weekend Grand Buffet  <span class="badge badge-danger">NEW</span></h2>
+          <div class="media">
+            <img class="d-flex ml-3 img-thumbnail align-self-center order-sm-last" src="img/buffet.png" alt="uthapizza" />
+            <div class="media-body order-first">
+              <h2>Weekend Grand Buffet <span class="badge badge-danger">NEW</span></h2>
               <p class="d-none d-sm-block">
-                Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest
-                desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person
+                Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five
+                choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person
               </p>
-            </div>      
+            </div>
           </div>
-      
         </div>
       </div>
 
@@ -128,49 +129,37 @@
             <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
             <div class="card-body">
               <div class="row">
-                <form class="col" action="">
+                <form class="col" id="reserveform">
                   <div class="form-group row">
                     <label for="guestnumber" class="col-md-3 col-form-label">Number of Guests</label>
                     <div class="col-md">
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="radiobtn1" id="radiobtn1" value="1" checked>
-                        <label class="form-check-label" for="radiobtn1">
-                          1
-                        </label>
+                        <input class="form-check-input" type="radio" name="radiobtn" id="radiobtn1" value="1" checked />
+                        <label class="form-check-label" for="radiobtn1"> 1 </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="radiobtn2" id="radiobtn2" value="2">
-                        <label class="form-check-label" for="radiobtn2">
-                          2
-                        </label>
+                        <input class="form-check-input" type="radio" name="radiobtn" id="radiobtn2" value="2" />
+                        <label class="form-check-label" for="radiobtn2"> 2 </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="radiobtn3" id="radiobtn3" value="3">
-                        <label class="form-check-label" for="radiobtn3">
-                          3
-                        </label>
+                        <input class="form-check-input" type="radio" name="radiobtn" id="radiobtn3" value="3" />
+                        <label class="form-check-label" for="radiobtn3"> 3 </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="radiobtn4" id="radiobtn4" value="4">
-                        <label class="form-check-label" for="radiobtn4">
-                          4
-                        </label>
+                        <input class="form-check-input" type="radio" name="radiobtn" id="radiobtn4" value="4" />
+                        <label class="form-check-label" for="radiobtn4"> 4 </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="radiobtn5" id="radiobtn5" value="4">
-                        <label class="form-check-label" for="radiobtn5">
-                          5
-                        </label>
+                        <input class="form-check-input" type="radio" name="radiobtn" id="radiobtn5" value="4" />
+                        <label class="form-check-label" for="radiobtn5"> 5 </label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="radiobtn6" id="radiobtn6" value="4">
-                        <label class="form-check-label" for="radiobtn6">
-                          6
-                        </label>
+                        <input class="form-check-input" type="radio" name="radiobtn6" id="radiobtn6" value="4" />
+                        <label class="form-check-label" for="radiobtn6"> 6 </label>
                       </div>
                     </div>
                   </div>
-                  
+
                   <div class="form-group row">
                     <label for="reservedate" class="col-12 col-md-3 col-form-label">Date and Time</label>
                     <div class="col-12 col-md-5">
@@ -186,10 +175,10 @@
                     </div>
                   </div>
                 </form>
-              </dl>
+              </div>
             </div>
           </div>
-        </div>        
+        </div>
       </div>
     </div>
 
