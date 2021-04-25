@@ -38,7 +38,7 @@
             </li>
           </ul>
           <span class="navbar-text">
-            <a ><span class="fa fa-sign-in"></span> Login </a>
+            <a id="btnLoginModal" class="nav-link"><span class="fa fa-sign-in"></span> Login </a>
           </span>
         </div>
       </div>
@@ -79,7 +79,7 @@
       </div>
     </div>
 
-    <div id="reservemodal" class="modal fade" role="dialog">
+    <div id="reserveModal" class="modal fade" role="dialog">
       <div class="modal-dialog modal-lg" role="content">
         <div class="modal-content">
           <div class="modal-header">
@@ -167,7 +167,7 @@
                 <img src="img/logo.png" class="img-fluid" alt="" />
               </div>
               <div class="col-12 col-sm">
-                <a class="btn btn-warning btn-block nav-link">Reserve Table</a>
+                <a id="btnReserveModal" class="btn btn-warning btn-block nav-link">Reserve Table</a>
               </div>
             </div>
           </div>
@@ -339,7 +339,7 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script>
       $(document).ready(function () {
-        $("#mycarousel").carousel({ interval: 1 });
+        $("#mycarousel").carousel({ interval: 2000 });
 
         $("#carouselButton").click(function () {
           if ($("#carouselButton").children("span").hasClass("fa-pause")) {
@@ -351,6 +351,14 @@
             $("#carouselButton").children("span").removeClass("fa-play");
             $("#carouselButton").children("span").addClass("fa-pause");
           }
+        });
+
+        $("#btnLoginModal").click(function () {
+          $("#loginModal").modal('toggle');
+        });
+
+        $("#btnReserveModal").click(function () {
+          $("#reserveModal").modal('toggle');
         });
       });
     </script>
