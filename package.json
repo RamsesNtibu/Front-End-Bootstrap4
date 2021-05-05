@@ -5,7 +5,7 @@
   "main": "index.html",
     "engines": {
     "node": "15.x"
-  }
+  },
   "scripts": {
     "start": "npm run watch:all",
     "test": "echo \"Error: no test specified\" && exit 1",
